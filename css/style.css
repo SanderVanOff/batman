@@ -1,3 +1,82 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 body {
     color: white;
     font-family: Roboto;
@@ -172,14 +251,19 @@ body {
     background: #FFFFFF;
     border-radius: 3px;
     color: black;
-    padding: 43px 50px;
+    padding: 3% 3%;
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 3%;
+    /* justify-content: space-between; */
+}
+
+.short-info {
+    margin-right: 3%;
 }
 
 .poster {
-    display: block;
-    margin-top: -75px;
+    /* display: block; */
+    margin-top: -40%;
     margin-bottom: 20px;
 }
 
@@ -213,26 +297,30 @@ body {
 }
 
 .full-info {
-    flex: 0.97;
+    flex: 1;
 }
 
 .tabs {
-    margin-bottom: 40px;
+    margin-bottom: 4%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
 }
 
 .tabs-item {
     color: #000;
     text-decoration: none;
-    margin-right: 40px;
     font-size: 18px;
     line-height: 21px;
 }
 
-.tabs-item:last-child {
-    margin-right: 0;
+.tabs-item:hover {
+    text-decoration: underline;
+}
+
+.tabs-item:not(:last-child) {
+    margin-right: 4%;
 }
 
 .tabs-item-active {
@@ -241,28 +329,192 @@ body {
 
 .full-content {
     display: flex;
-    justify-content: space-between;
 }
 
 .tabs-content {
+    flex: 70%;
     margin-right: 70px;
 }
 
-.subscribe {}
 
 .text-title {
     font-weight: 900;
     font-size: 16px;
     line-height: 140%;
+    margin-bottom: 3%;
 }
 
 .text {
     font-size: 16px;
     line-height: 140%;
-    margin-bottom: 32px;
+    margin-bottom: 4%;
 }
 
-.banner {
-    display: block;
-    width: 212px;
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 14px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.subscribe-input {
+    background: rgba(196, 196, 196, 0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 12px 18px;
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+}
+
+.subscribe-button {
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0;
+    border: none;
+    padding: 12px;
+}
+
+.subscribe-button img {
+    max-width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .tabs-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tabs-item {
+        line-height: 2;
+        flex-basis: 20%;
+    }
+
+    .full-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .actors-list {
+        font-size: 14px;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .tabs-item:last-child {
+        display: none;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 5%;
+    }
+
+    .movie-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .short-info {
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+
+    .poster {
+        display: inline-block;
+        width: 100%;
+        margin-top: -20%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .actors-list,
+    .actors-title {
+        display: none;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+
+    .movie-info {
+        flex-wrap: wrap;
+    }
+
+    .play {
+        /* margin-top: 4%; */
+    }
+}
+
+@media (max-width: 462px) {
+    .play {
+        margin-top: 4%;
+    }
 }
