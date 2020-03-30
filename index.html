@@ -7,8 +7,10 @@
     <link href=" https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Batman 2021 - страница о фильме</title>
 </head>
 
@@ -28,12 +30,13 @@
             </div>
         </header>
         <main class="main">
-            <h1 class="title">Бэтмен</h1><small class="title-en">The Batman</small>
+            <h1 class="title animated slideInLeft">Бэтмен</h1><small class="title-en animated zoomIn">The Batman</small>
             <div class="info">
-                <div class="movie-info">
+                <div class="movie-info animated bounceInUp">
                     <span class="tag">Фильм</span>
                     <span class="country">США, 2021 год</span>
-                    <a href="#" class="play">Смотреть трейлер</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="play">Смотреть
+                        трейлер</a>
                 </div>
                 <a href="#" class="more">Подробнее</a>
             </div>
@@ -56,48 +59,154 @@
                 </div>
                 <!-- short-info -->
                 <div class="full-info">
-                    <nav class="tabs"><a href="#" class="tabs-item tabs-item-active">Описание</a>
-                        <a href="#" class="tabs-item">Рецензии</a>
-                        <a href="#" class="tabs-item">Премьеры</a>
-                        <a href="#" class="tabs-item">Актеры</a>
-                        <a href="#" class="tabs-item">Награды</a>
-                        <a href="#" class="tabs-item">Факты</a>
-                        <a href="#" class="tabs-item">Сайты</a>
+                    <nav class="tabs"><a href="#about" class="tabs-item tabs-item-active">Описание</a>
+                        <a href="#reviews" class="tabs-item">Рецензии</a>
+                        <a href="#premiers" class="tabs-item">Премьеры</a>
+                        <a href="#actors" class="tabs-item">Актеры</a>
+                        <a href="#awards" class="tabs-item">Награды</a>
+                        <a href="#facts" class="tabs-item">Факты</a>
+                        <a href="#site" class="tabs-item">Сайты</a>
                         <a href="#" class="tabs-item">
                             <img src="img/bookmark-icon.svg" alt="" class="bookmark-added">
                         </a>
                     </nav>
                     <div class="full-content">
-                        <div class="tabs-content">
-                            <p class="text">Предстоящий американский супергеройский фильм,
-                                основанный на одноимённых комиксах издательства DC Comics. Картина будет
-                                выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.
-                            </p>
+                        <div class="tabs-content visible" id="about">
+                            <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых
+                                комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет
+                                перезагрузкой всех фильмов о Бэтмене.</p>
                             <p class="text">Фильм является десятым по счёту фильмом из Расширенной вселенной DC.
-                                Режиссёром и сценаристом фильма выступит Мэтт Ривз,
-                                а главную роль исполнит Роберт Паттинсон
-                            </p>
+                                Режиссёром и сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт
+                                Паттинсон</p>
                             <h4 class="text-title">Разработка</h4>
-                            <p class="text">В октябре 2014 года студия Warner Bros. объявила,
-                                что в разработке находится сольный фильм о Бэтмене,
-                                роль которого вновь исполнит Бен Аффлек. В июле 2015 года сообщалось,
-                                что Аффлек ведёт переговоры со студией по поводу постановки фильма и совместного
-                                написания сценария с Джеффом Джонсом.
-                            </p>
-                            <p class="text">После выхода фильма «Бэтмен против Супермена: На заре
-                                справедливости» руководитель агентства WME Патрик Уайтсел подтвердил,
-                                что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент
-                                его рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил,
-                                что он появится в фильме про Тёмного Рыцаря.
-                            </p>
-                            <p class="text">На Comic-Con в Сан-Диего в июле 2016 года было официально
-                                подтверждено,
-                                что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц
-                                Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан
-                                персонаж Детстроук. 8 сентября 2016 года Джефф Джонс
-                                подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который,
-                                возможно, станет главным злодеем фильма.
-                            </p>
+                            <p class="text">В октябре 2014 года студия Warner Bros. объявила, что в разработке находится
+                                сольный фильм о Бэтмене, роль которого вновь исполнит Бен Аффлек. В июле 2015 года
+                                сообщалось, что Аффлек ведёт переговоры со студией по поводу постановки фильма и
+                                совместного написания сценария с Джеффом Джонсом.</p>
+                            <p class="text">После выхода фильма «Бэтмен против Супермена: На заре справедливости»
+                                руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для
+                                сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016
+                                года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря.</p>
+                            <p class="text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что
+                                Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в
+                                социальных сетях был опубликован тестовый материал, в котором был показан персонаж
+                                Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет
+                                наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
+                        </div>
+                        <div class="tabs-content" id="reviews">
+                            <p class="">Здесь будут рецензии</p>
+                        </div>
+                        <div class="tabs-content" id="premiers">
+                            <h3 class="tabs-title">Даты премьер</h3>
+                            <p class="tabs-country flag flag-1">24 июня 2021 <span>Аргентина</span></p>
+                            <p class="tabs-country flag flag-2">24 июня 2021 <span>Россия</span></p>
+                            <p class="tabs-country flag flag-3">24 июня 2021 <span>Словакия</span></p>
+                            <p class="tabs-country flag flag-4">25 июня 2021 <span>Американские Виргинские
+                                    острова</span></p>
+                            <p class="tabs-country flag flag-5">25 июня 2021 <span>Бельгия</span></p>
+                            <p class="tabs-country flag flag-6">25 июня 2021 <span>Бразилия</span></p>
+                            <p class="tabs-country flag flag-7">25 июня 2021 <span>Великобритания</span></p>
+                            <p class="tabs-country flag flag-8">25 июня 2021 <span>Канада</span></p>
+                            <p class="tabs-country flag flag-9">25 июня 2021 <span>Литва</span></p>
+                            <p class="tabs-country flag flag-10">25 июня 2021 <span>Португалия</span></p>
+                            <p class="tabs-country flag flag-11">25 июня 2021 <span>США</span></p>
+                            <p class="tabs-country flag flag-12">25 июня 2021 <span>Турция</span></p>
+                            <p class="tabs-country flag flag-13">26 июня 2021 <span>Япония</span></p>
+                            <p class="tabs-country flag flag-14">30 июня 2021 <span>Франция</span></p>
+                        </div>
+                        <div class="tabs-content" id="actors">
+                            <h3 class="tabs-title">Актеры</h3>
+                            <div class="tabs-actors-item">
+                                <img src="img/Pattison.jpg" alt="" class="tabs-actos-img">
+                                <p class="tabs-actors-name">Роберт Паттинсон<br><span>Robert Pattinson</span></p>
+                                <p class="tabs-actors-role">Брюс Уэйн<br><span>Бэтмен</span></p>
+                            </div>
+                            <div class="tabs-actors-item">
+                                <img src="img/Zoe.jpg" alt="" class="tabs-actos-img">
+                                <p class="tabs-actors-name">Зои Кравиц<br><span>Zoe Kravitz</span></p>
+                                <p class="tabs-actors-role">Селина Кайл<br><span>Женщина-кошка</span></p>
+                            </div>
+                            <div class="tabs-actors-item">
+                                <img src="img/Andy.jpg" alt="" class="tabs-actos-img">
+                                <p class="tabs-actors-name">Энди Серкис<br><span>Andy Serkis</span></p>
+                                <p class="tabs-actors-role">Альфред Пенниуорт<br><span></span></p>
+                            </div>
+                            <div class="tabs-actors-item">
+                                <img src="img/Colin.jpg" alt="" class="tabs-actos-img">
+                                <p class="tabs-actors-name">Колин Фаррелл<br><span>Colin Farrell</span></p>
+                                <p class="tabs-actors-role">Освальд Кобблпот<br><span>Пингвин</span></p>
+                            </div>
+                            <div class="tabs-actors-item">
+                                <img src="img/Paul.jpg" alt="" class="tabs-actos-img">
+                                <p class="tabs-actors-name">Пол Дано<br><span>Paul Dano</span></p>
+                                <p class="tabs-actors-role">Эдвард Нештон<br><span>Загадочник</span></p>
+                            </div>
+                            <div class="tabs-actors-item">
+                                <img src="img/Jeffrey.jpg" alt="" class="tabs-actos-img">
+                                <p class="tabs-actors-name">Джеффри Райт<br><span>Jeffrey Wright</span></p>
+                                <p class="tabs-actors-role">Джеймс Гордон<br><span>Комиссар</span></p>
+                            </div>
+                            <div class="tabs-actors-item">
+                                <img src="img/John.jpg" alt="" class="tabs-actos-img">
+                                <p class="tabs-actors-name">Джон Туртурро<br><span>John Turturro</span></p>
+                                <p class="tabs-actors-role">Кармайн Фальконе<br><span>Римлянин</span></p>
+                            </div>
+                        </div>
+                        <div class="tabs-content" id="awards">
+                            <p class="">Здесь будут награды</p>
+                        </div>
+                        <div class="tabs-content" id="facts">
+                            <h3 class="tabs-facts-name">Интересные факты</h3>
+                            <div class="tabs-facts-block">
+                                <h3 class="tabs-facts-title">Сюжет</h3>
+                                <img src="img/scale_1200.webp" alt="" class="tabs-facts-img">
+                                <p class="tabs-facts-text">По словам Мэтта Ривза, фильм будет совсем не похож на
+                                    стандартные супергеройские картины с большим количеством экшена и научной
+                                    фантастики. "Бэтмен" будет оригинальной историей в стиле нуар с детективным
+                                    повествованием. Если сложить всю информацию с различных интервью Ривза, становится
+                                    понятно, что Бэтмен будет расследовать некое дело, возможно, заговор, связанный с
+                                    историей Готэма и его преступным миром. По слухам, действие фильма будет происходить
+                                    во время зимних праздников.</p>
+                                <p class="tabs-facts-text">Что касается источников вдохновения для фильма, то комиксы
+                                    определенно сыграли свою
+                                    роль. Ривз рассказал, что на страницах печатных изданий есть несколько историй,
+                                    которые легли в основу фильма. Там Бэтмен уже является величайшим детективом в мире,
+                                    но совсем не обязательно, что в фильме мы увидим тоже самое. Тем не менее, режиссер
+                                    намерен показать как герой выслеживает преступников и раскрывает преступления.</p>
+                            </div>
+                            <div class="tabs-facts-block">
+                                <h3 class="tabs-facts-title">Злодеи</h3>
+                                <img src="img/scale_1202.webp" alt="" class="tabs-facts-img">
+                                <p class="tabs-facts-text">По данным сразу нескольких источников, в фильме нас ждеет
+                                    целая группа злодеев, среди которых точно будут присутствовать Загадочник, Пингвин и
+                                    Женщина-кошка. Среди неподтвержденных злодеев наиболее вероятно появление Двуликого,
+                                    а также Светлячка и Безумного Шляпника. Говорят, что Пингвин выступит главным
+                                    антагонистом, но зная Мэтта Ривза, можно предположить, что главным злодеем станет
+                                    кто-то, кто ещё не был таковым на большом экране.</p>
+                                <p class="tabs-facts-text">Если говорить о вероятных исполнителях главных ролей, то
+                                    долгое время на роль Пингвина сватали Джоша Гада. К моменту написания статьи,
+                                    кажется, эти слухи потеряли веские основания, и теперь роль главного злодея
+                                    предрекают уже Полу Уолтер Хаузеру. На роль Харви Дента студия рассматривает Джона
+                                    Дэвида Вашингтона, а в лице Джейми Фокса или Джанкарло Эспозито видят Загадочника. С
+                                    ролью Женщины-кошки чаще всего связывают Ванессу Кирби, но все вышеперечисленные
+                                    позиции являются либо слухами и предположениями, либо инсайдерской информацией,
+                                    неподтвержденной официально.</p>
+                            </div>
+                            <div class="tabs-facts-block">
+                                <h3 class="tabs-facts-title">Детали релиза</h3>
+                                <img src="img/scale_1203.webp" alt="" class="tabs-facts-img">
+                                <p class="tabs-facts-text">На данный момент официальной датой выхода фильма "Бэтмен"
+                                    считается 25 июня 2021 года. По последним данным, окончательный сценарий картины уже
+                                    готов. Ожидается, что фильм получит рейтинг PG-13, что является нормой для
+                                    большинства супергеройских проектов. Съёмки должны начаться в первом квартале 2020
+                                    года, а по самым смелым прикидкам - уже в январе. Собственно отсюда и берут свои
+                                    корни слухи о зимнем времени действия фильма. Рабочий состав "Бэтмена" пополнили
+                                    оператор Грейг Фрейзер ("Изгой-один. Звездные Войны") и художник-постановщик Джеймс
+                                    Чинланд ("Король лев").</p>
+                            </div>
+                        </div>
+                        <div class="tabs-content" id="site">
+                            <p class="">Здесь будут сайты</p>
                         </div>
                         <div class="subscribe">
                             <h3 class="subscribe-title">Подпишитесь на обновления</h3>
@@ -118,6 +227,10 @@
         </main>
     </div>
     <!-- /container -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
