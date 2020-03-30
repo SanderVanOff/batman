@@ -351,59 +351,59 @@ body {
 }
 
 .tabs-content .flag-1::before {
-    background: url(/img/Argentina.png) 0 10px no-repeat;
+    background: url('../img/Argentina.png') 0 10px no-repeat;
 }
 
 .tabs-content .flag-2::before {
-    background: url(/img/Russia.png) 0 10px no-repeat;
+    background: url(../img/Russia.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-3::before {
-    background: url(/img/Slovakia.png) 0 10px no-repeat;
+    background: url(../img/Slovakia.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-4::before {
-    background: url(/img/US-Virgin-Islands.png) 0 10px no-repeat;
+    background: url(../img/US-Virgin-Islands.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-5::before {
-    background: url(/img/Belgium.png) 0 10px no-repeat;
+    background: url(../img/Belgium.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-6::before {
-    background: url(/img/Brazil.png) 0 10px no-repeat;
+    background: url(../img/Brazil.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-7::before {
-    background: url(/img/United-Kingdom.png) 0 10px no-repeat;
+    background: url(../img/United-Kingdom.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-8::before {
-    background: url(/img/Canada.png) 0 10px no-repeat;
+    background: url(../img/Canada.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-9::before {
-    background: url(/img/Lithuania.png) 0 10px no-repeat;
+    background: url(../img/Lithuania.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-10::before {
-    background: url(/img/Portugal.png) 0 10px no-repeat;
+    background: url(../img/Portugal.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-11::before {
-    background: url(/img/United-States.png) 0 10px no-repeat;
+    background: url(../img/United-States.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-12::before {
-    background: url(/img/Turkey.png) 0 10px no-repeat;
+    background: url(../img/Turkey.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-13::before {
-    background: url(/img/Japan.png) 0 10px no-repeat;
+    background: url(../img/Japan.png) 0 10px no-repeat;
 }
 
 .tabs-content .flag-14::before {
-    background: url(/img/France.png) 0 10px no-repeat;
+    background: url(../img/France.png) 0 10px no-repeat;
 }
 
 .tabs-content p {
