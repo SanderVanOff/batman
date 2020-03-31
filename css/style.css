@@ -698,12 +698,11 @@ body {
 
 
     .tabs-actors-name {
-        margin-left: 10px;
-        /* width: 150px; */
+        margin-left: 5px;
     }
 
     .tabs-actors-role {
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .full-content {
