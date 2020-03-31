@@ -572,7 +572,6 @@ body {
         border-bottom: 1px solid grey;
     }
 
-    .tabs-country p {}
 
     .tabs-country span {
         display: flex;
@@ -697,11 +696,6 @@ body {
         padding-left: 0px;
     }
 
-    .tabs-actors-item {
-        /* flex-direction: column;
-        align-items: center;
-        justify-content: center; */
-    }
 
     .tabs-actors-name {
         margin-left: 10px;
@@ -721,7 +715,7 @@ body {
     }
 }
 
-@media (max-width: 318px) {
+@media (max-width: 320px) {
     .tabs-actors-item {
         flex-direction: column;
         align-items: center;
@@ -750,7 +744,5 @@ body {
         text-align: center;
         display: inline-block;
     }
-
-    .subscribe {}
 
 }
