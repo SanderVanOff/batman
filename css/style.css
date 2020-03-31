@@ -535,6 +535,7 @@ body {
     .tabs-content {
         margin-bottom: 20px;
         margin-right: 30px;
+        flex-direction: column;
     }
 }
 
@@ -559,11 +560,12 @@ body {
 
     .tabs-content {
         margin-bottom: 20px;
+        flex-direction: column;
     }
 
-    #premiers {
+    /* #premiers {
         padding-left: 10px;
-    }
+    } */
 
     .tabs-country {
         width: 70%;
@@ -593,9 +595,6 @@ body {
         font-size: 14px;
     }
 
-    .tabs-content {
-        margin-right: 0;
-    }
 }
 
 @media (max-width: 768px) {
@@ -611,9 +610,13 @@ body {
         display: none;
     }
 
+    .full-content {
+        flex-wrap: wrap;
+    }
+
     .tabs-content {
         margin-right: 0;
-        flex: 1;
+        flex-direction: column;
     }
 
     .tabs-actors-item {
@@ -676,7 +679,7 @@ body {
 
     .tabs-content {
         margin-right: 0;
-        flex: 1;
+        flex-direction: column;
     }
 
     .movie-info {
@@ -689,4 +692,65 @@ body {
     .play {
         margin-top: 4%;
     }
+
+    #premiers {
+        padding-left: 0px;
+    }
+
+    .tabs-actors-item {
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    .tabs-actors-name {
+        margin-left: 10px;
+        /* width: 150px; */
+    }
+
+    .tabs-actors-role {
+        margin-left: 10px;
+    }
+
+    .full-content {
+        flex-wrap: wrap;
+    }
+
+    .tabs-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 318px) {
+    .tabs-actors-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tabs-actors-item img {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .tabs-actors-name {
+        margin-left: 0px;
+        justify-content: center;
+        /* width: 150px; */
+    }
+
+    .tabs-actors-role {
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .tabs-actors-name,
+    .tabs-actors-role {
+        font-weight: 700;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .subscribe {}
+
 }
