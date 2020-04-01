@@ -677,12 +677,27 @@ body {
     }
 
     .tabs-content {
-        margin-right: 0;
+        /* margin-right: 0; */
         flex-direction: column;
     }
 
     .movie-info {
         flex-wrap: wrap;
+    }
+
+    #premiers .tabs-title {
+        margin: 0 auto;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .tabs-country {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .tabs-facts-text {
+        font-size: 14px;
     }
 
 }
@@ -696,9 +711,17 @@ body {
         padding-left: 0px;
     }
 
+    .tabs-actors-item {
+        margin-left: 0;
+        justify-content: unset;
+    }
+
+    .tabs-actos-img {
+        margin: 0;
+    }
 
     .tabs-actors-name {
-        margin-left: 5px;
+        margin-left: 15px;
     }
 
     .tabs-actors-role {
