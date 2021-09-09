@@ -12,7 +12,7 @@
 - для работы табов использована библиотека Jqery;
 - страница добавлена на GitHub
 
-**Ссылка**: https://sanderbest.github.io/batman/
+**Ссылка**: https://sandervanoff.github.io/batman/
 
 ![YRyzJkLg5OhrNmjr](https://user-images.githubusercontent.com/61217980/129860332-d82a0174-a387-4ff4-a130-e9f9c5b735df.png)
 
